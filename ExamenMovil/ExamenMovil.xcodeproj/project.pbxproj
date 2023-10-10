@@ -109,11 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				DF9CB0E52AD5BE200018DCF2 /* ExamenMovilApp.swift */,
-				DF9CB1122AD5BEA10018DCF2 /* Repositories */,
-				DF9CB1112AD5BE900018DCF2 /* ModelViews */,
-				DF9CB1102AD5BE890018DCF2 /* Views */,
-				DF9CB10F2AD5BE740018DCF2 /* Models */,
-				DF9CB0E92AD5BE210018DCF2 /* Assets.xcassets */,
+				DF9CB1252AD5CF1A0018DCF2 /* Data */,
+				DF9CB1242AD5CEF60018DCF2 /* Presentation */,
+				DF9CB1232AD5CEDF0018DCF2 /* Domain */,
 				DF9CB0EB2AD5BE210018DCF2 /* Preview Content */,
 			);
 			path = ExamenMovil;
@@ -176,6 +174,32 @@
 				DF9CB1172AD5BF400018DCF2 /* moviesRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DF9CB1232AD5CEDF0018DCF2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DF9CB10F2AD5BE740018DCF2 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DF9CB1242AD5CEF60018DCF2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DF9CB0E92AD5BE210018DCF2 /* Assets.xcassets */,
+				DF9CB1102AD5BE890018DCF2 /* Views */,
+				DF9CB1112AD5BE900018DCF2 /* ModelViews */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DF9CB1252AD5CF1A0018DCF2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DF9CB1122AD5BEA10018DCF2 /* Repositories */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
