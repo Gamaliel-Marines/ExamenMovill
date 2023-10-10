@@ -10,7 +10,7 @@ import Foundation
 struct Movie: Codable {
     var id: Int
     var title: String
-    // Agrega más propiedades según sea necesario
+
 }
 
 struct MovieResponse: Codable {

@@ -11,7 +11,7 @@ import SwiftUI
 struct ExamenMovilApp: App {
     var body: some Scene {
         WindowGroup {
-            MovieListView() // Set MovieListView as the root view
+            MovieListView()
         }
     }
 }
