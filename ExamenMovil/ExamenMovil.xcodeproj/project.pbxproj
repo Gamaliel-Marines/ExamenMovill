@@ -14,6 +14,13 @@
 		DF9CB0F72AD5BE220018DCF2 /* ExamenMovilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB0F62AD5BE220018DCF2 /* ExamenMovilTests.swift */; };
 		DF9CB1012AD5BE220018DCF2 /* ExamenMovilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB1002AD5BE220018DCF2 /* ExamenMovilUITests.swift */; };
 		DF9CB1032AD5BE220018DCF2 /* ExamenMovilUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB1022AD5BE220018DCF2 /* ExamenMovilUITestsLaunchTests.swift */; };
+		DF9CB1142AD5BEF80018DCF2 /* moviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB1132AD5BEF80018DCF2 /* moviesModel.swift */; };
+		DF9CB1162AD5BF1E0018DCF2 /* moviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB1152AD5BF1E0018DCF2 /* moviesViewModel.swift */; };
+		DF9CB1182AD5BF400018DCF2 /* moviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB1172AD5BF400018DCF2 /* moviesRepository.swift */; };
+		DF9CB11A2AD5BF980018DCF2 /* movieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB1192AD5BF980018DCF2 /* movieListViewModel.swift */; };
+		DF9CB11C2AD5C0230018DCF2 /* moviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB11B2AD5C0230018DCF2 /* moviesView.swift */; };
+		DF9CB11F2AD5C3250018DCF2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DF9CB11E2AD5C3250018DCF2 /* Alamofire */; };
+		DF9CB1222AD5C4190018DCF2 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DF9CB1212AD5C4190018DCF2 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,11 @@
 		DF9CB0FC2AD5BE220018DCF2 /* ExamenMovilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExamenMovilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9CB1002AD5BE220018DCF2 /* ExamenMovilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamenMovilUITests.swift; sourceTree = "<group>"; };
 		DF9CB1022AD5BE220018DCF2 /* ExamenMovilUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamenMovilUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF9CB1132AD5BEF80018DCF2 /* moviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moviesModel.swift; sourceTree = "<group>"; };
+		DF9CB1152AD5BF1E0018DCF2 /* moviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moviesViewModel.swift; sourceTree = "<group>"; };
+		DF9CB1172AD5BF400018DCF2 /* moviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moviesRepository.swift; sourceTree = "<group>"; };
+		DF9CB1192AD5BF980018DCF2 /* movieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieListViewModel.swift; sourceTree = "<group>"; };
+		DF9CB11B2AD5C0230018DCF2 /* moviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moviesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9CB1222AD5C4190018DCF2 /* SwiftyJSON in Frameworks */,
+				DF9CB11F2AD5C3250018DCF2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				DF9CB0E52AD5BE200018DCF2 /* ExamenMovilApp.swift */,
-				DF9CB0E72AD5BE200018DCF2 /* ContentView.swift */,
+				DF9CB1122AD5BEA10018DCF2 /* Repositories */,
+				DF9CB1112AD5BE900018DCF2 /* ModelViews */,
+				DF9CB1102AD5BE890018DCF2 /* Views */,
+				DF9CB10F2AD5BE740018DCF2 /* Models */,
 				DF9CB0E92AD5BE210018DCF2 /* Assets.xcassets */,
 				DF9CB0EB2AD5BE210018DCF2 /* Preview Content */,
 			);
@@ -127,6 +144,40 @@
 			path = ExamenMovilUITests;
 			sourceTree = "<group>";
 		};
+		DF9CB10F2AD5BE740018DCF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF9CB1132AD5BEF80018DCF2 /* moviesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF9CB1102AD5BE890018DCF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF9CB0E72AD5BE200018DCF2 /* ContentView.swift */,
+				DF9CB11B2AD5C0230018DCF2 /* moviesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF9CB1112AD5BE900018DCF2 /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+				DF9CB1152AD5BF1E0018DCF2 /* moviesViewModel.swift */,
+				DF9CB1192AD5BF980018DCF2 /* movieListViewModel.swift */,
+			);
+			path = ModelViews;
+			sourceTree = "<group>";
+		};
+		DF9CB1122AD5BEA10018DCF2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DF9CB1172AD5BF400018DCF2 /* moviesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +194,10 @@
 			dependencies = (
 			);
 			name = ExamenMovil;
+			packageProductDependencies = (
+				DF9CB11E2AD5C3250018DCF2 /* Alamofire */,
+				DF9CB1212AD5C4190018DCF2 /* SwiftyJSON */,
+			);
 			productName = ExamenMovil;
 			productReference = DF9CB0E22AD5BE200018DCF2 /* ExamenMovil.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +270,10 @@
 				Base,
 			);
 			mainGroup = DF9CB0D92AD5BE200018DCF2;
+			packageReferences = (
+				DF9CB11D2AD5C3250018DCF2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DF9CB1202AD5C4190018DCF2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = DF9CB0E32AD5BE200018DCF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +316,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9CB1182AD5BF400018DCF2 /* moviesRepository.swift in Sources */,
+				DF9CB11C2AD5C0230018DCF2 /* moviesView.swift in Sources */,
+				DF9CB11A2AD5BF980018DCF2 /* movieListViewModel.swift in Sources */,
+				DF9CB1142AD5BEF80018DCF2 /* moviesModel.swift in Sources */,
 				DF9CB0E82AD5BE200018DCF2 /* ContentView.swift in Sources */,
 				DF9CB0E62AD5BE200018DCF2 /* ExamenMovilApp.swift in Sources */,
+				DF9CB1162AD5BF1E0018DCF2 /* moviesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +641,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF9CB11D2AD5C3250018DCF2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DF9CB1202AD5C4190018DCF2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF9CB11E2AD5C3250018DCF2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF9CB11D2AD5C3250018DCF2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DF9CB1212AD5C4190018DCF2 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF9CB1202AD5C4190018DCF2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF9CB0DA2AD5BE200018DCF2 /* Project object */;
 }
